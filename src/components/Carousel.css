@@ -1,0 +1,64 @@
+.carousel{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+}
+
+.carousel-slide{
+    border-radius: 8px;
+    box-shadow:0 0  7px #666;
+    width: 100%;
+    height: 100%;
+}
+.hidden{
+    display: none;
+}
+   
+
+.arrow{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    filter: drop-shadow(0 0 5px #555);
+
+    /* Box shadow is square shape so better use this */
+}
+.arrow:hover{
+    cursor: pointer;
+}
+
+.arrow-left{
+    left: 16px;
+}
+
+.arrow-right{
+    right: 16px;
+ 
+}
+
+.indicators{
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+}
+.indicator{
+    background-color: #fff;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin:0 2px;
+    box-shadow: 0 0 5px #555;
+}
+
+.inactive{
+    background-color: gray;
+}
+.indicator:hover{
+    cursor: pointer;
+}
